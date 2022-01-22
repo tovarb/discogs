@@ -1,6 +1,5 @@
 module.exports = {
-  purge: ["./index.html", "./src/**/*.{tsx}"],
-  content: [],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
   },
