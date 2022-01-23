@@ -1,4 +1,6 @@
-const MusicRelease = ({ musicRelease }: { musicRelease: any }) => {
+import { musicReleaseInfo } from "./musicReleaseInfo";
+
+const MusicRelease = ({ musicRelease }: { musicRelease: musicReleaseInfo }) => {
   //Extraction of main elements of musicRelease
   const { thumb, title, uri } = musicRelease;
   const url = "https://www.discogs.com" + uri;

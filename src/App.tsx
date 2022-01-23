@@ -5,7 +5,7 @@ import ResultList from "./components/ResultList";
 
 function App() {
   const [search, setSearch] = useState("");
-  const [musicReleases, setMusicReleases] = useState([]);
+  const [musicReleases, setMusicReleases] = useState<any>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
 
