@@ -3,6 +3,7 @@ import { useState } from "react";
 const Form = ({ setSearch }: { setSearch: any }) => {
   const [searchedText, setSearchedText] = useState("");
 
+  //Storage of searched text
   const searchInformation = (e: any) => {
     e.preventDefault();
 

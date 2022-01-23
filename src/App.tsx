@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import "./App.css";
 import Form from "./components/Form";
 import ResultList from "./components/ResultList";
 
@@ -13,6 +12,7 @@ function App() {
   useEffect(() => {
     if (search === "") return;
 
+    //Call of API
     const callApi = async () => {
       const resultsPerPage = 18;
       const key = "zhCaEllGVyLwAekgqCSE";
@@ -29,6 +29,7 @@ function App() {
       const totalPages = Math.ceil(numberOfPages / resultsPerPage);
       setTotalPages(totalPages);
 
+      //Scroll to top after prev or next click
       const jumbotron = document.querySelector(".jumbotron");
       jumbotron!.scrollIntoView({ behavior: "smooth" });
     };

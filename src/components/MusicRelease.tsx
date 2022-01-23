@@ -1,7 +1,8 @@
 const MusicRelease = ({ musicRelease }: { musicRelease: any }) => {
+  //Extraction of main elements of musicRelease
   const { thumb, title, uri } = musicRelease;
-
   const url = "https://www.discogs.com" + uri;
+
   return (
     <div className="border-solid border-2 m-4 items-center justify-center">
       <div className="bg-white">
