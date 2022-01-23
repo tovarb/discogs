@@ -1,11 +1,18 @@
 import { useState } from "react";
+import Error from "./Error";
 
 const Form = ({ setSearch }: { setSearch: any }) => {
   const [searchedText, setSearchedText] = useState("");
+  const [error, setError] = useState(false);
 
   //Storage of searched text
   const searchInformation = (e: any) => {
     e.preventDefault();
+
+    if (searchedText.trim() === "") {
+      setError(true);
+      return;
+    }
 
     setSearch(searchedText);
   };
@@ -32,6 +39,10 @@ const Form = ({ setSearch }: { setSearch: any }) => {
           />
         </div>
       </div>
+
+      {error ? (
+        <Error message="Something went wrong, please write again an album or artist." />
+      ) : null}
     </form>
   );
 };
