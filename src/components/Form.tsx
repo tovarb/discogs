@@ -2,7 +2,6 @@ import { useState } from "react";
 
 const Form = ({ setSearch }: { setSearch: any }) => {
   const [searchedText, setSearchedText] = useState("");
-  //termino - guardar termino
 
   const searchInformation = (e: any) => {
     e.preventDefault();

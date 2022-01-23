@@ -5,7 +5,6 @@ import Form from "./components/Form";
 
 function App() {
   const [search, setSearch] = useState("");
-  //búsqueda - guardar búsqueda
 
   useEffect(() => {
     if (search === "") return;
