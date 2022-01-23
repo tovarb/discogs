@@ -18,7 +18,7 @@ const Form = ({ setSearch }: { setSearch: any }) => {
         <div className="basis-2/4">
           <input
             type="text"
-            placeholder="Search the artist, example: Vicente Fernandez"
+            placeholder="Search album or artist example: Vicente Fernandez"
             className="w-96 p-1 mt-4"
             onChange={(e: any) => setSearchedText(e.target.value)}
           />
