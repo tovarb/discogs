@@ -15,7 +15,7 @@ A single-page app that displays music releases from Discogs.
 
 ### Usage
 
-Enter the following link **\_**.
+Enter the following link [https://tovarb.github.io/discogs/](https://tovarb.github.io/discogs/).
 
 Search for your favorite artist or album.
 
