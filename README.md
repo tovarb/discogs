@@ -9,7 +9,7 @@ A single-page app that displays music releases from Discogs.
 - JS
 - HTML
 - CSS
-- Tailwindcss
+- TailwindCSS
 
 ### Usage
 
