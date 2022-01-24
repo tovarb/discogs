@@ -7,7 +7,7 @@ const MusicRelease = ({ musicRelease }: { musicRelease: musicReleaseInfo }) => {
 
   return (
     <div className="border-solid border-2 m-4 items-center justify-center">
-      <div className="bg-white">
+      <div className="bg-white pl-3 pt-3">
         <a href={url} target="_blank" rel="noopener noreferrer">
           <img src={thumb} alt={title} />
           <p className="text-sky-700">{title}</p>

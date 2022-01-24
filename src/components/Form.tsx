@@ -1,13 +1,20 @@
 import { useState } from "react";
 import Error from "./Error";
+import logo from "../logo.png";
 
 const Form = ({ setSearch }: { setSearch: any }) => {
-  const [searchedText, setSearchedText] = useState("");
+  const [searchedText, setSearchedText] = useState<string>("");
   const [error, setError] = useState(false);
 
   //Storage of searched text
   const searchInformation = (e: any) => {
     e.preventDefault();
+
+    let inputValue = (
+      document.getElementById("searchInput") as HTMLTextAreaElement
+    ).value;
+
+    //console.log(inputValue);
 
     if (searchedText.trim() === "") {
       setError(true);
@@ -19,23 +26,28 @@ const Form = ({ setSearch }: { setSearch: any }) => {
 
   return (
     <form onSubmit={searchInformation}>
-      <div className="flex flex-row">
-        <div className="basis-1/4">
-          <h1 className="p-4 text-2xl text-white mr-4">Discogs</h1>
-        </div>
-        <div className="basis-2/4">
-          <input
-            type="text"
-            placeholder="Search album or artist example: Vicente Fernandez"
-            className="w-96 p-1 mt-4"
-            onChange={(e: any) => setSearchedText(e.target.value)}
+      <div className="flex">
+        <div>
+          <img
+            src={logo}
+            alt="logo"
+            className="p-4 text-2xl mr-4 hidden md:block"
           />
         </div>
-        <div className="basis-1/4">
+        <div>
+          <input
+            type="text"
+            placeholder="Search album or artist"
+            className="w-25 md:w-30 lg:w-30 p-1 mt-5 mb-5"
+            onChange={(e: any) => setSearchedText(e.target.value)}
+            id="searchInput"
+          />
+        </div>
+        <div>
           <input
             type="submit"
             value="Search"
-            className="w-32 bg-blue-500 text-zinc-100 rounded p-1 ml-3 mt-4"
+            className="w-27 md:w-35 lg:w-35 bg-blue-500 text-zinc-100 rounded p-1 mt-5 mb-5 cursor-pointer"
           />
         </div>
       </div>
