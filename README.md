@@ -2,6 +2,8 @@
 
 A single-page app that displays music releases from Discogs.
 
+![Desktop](./discogs-desktop.png)
+
 ### Technologies
 
 - React
