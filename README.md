@@ -4,21 +4,16 @@ A single-page app that displays music releases from Discogs.
 
 ### Technologies
 
-# React
-
-# TypeScript
-
-# JS
-
-# HTML
-
-# CSS
-
-# Tailwindcss
+- React
+- TypeScript
+- JS
+- HTML
+- CSS
+- Tailwindcss
 
 ### Usage
 
-Enter the following link.
+Enter the following link **\_**.
 
 Search for your favorite artist or album.
 
