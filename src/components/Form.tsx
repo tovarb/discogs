@@ -24,14 +24,18 @@ const Form = ({ setSearch }: { setSearch: any }) => {
     setSearch(searchedText);
   };
 
+  const mainPage = (e: any) => {
+    window.location.reload();
+  };
+
   return (
     <form onSubmit={searchInformation}>
       <div className="flex">
-        <div>
+        <div onClick={mainPage}>
           <img
             src={logo}
             alt="logo"
-            className="p-4 text-2xl mr-4 hidden md:block"
+            className="p-4 text-2xl mr-4 hidden md:block cursor-pointer"
           />
         </div>
         <div>
