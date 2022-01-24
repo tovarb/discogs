@@ -10,12 +10,6 @@ const Form = ({ setSearch }: { setSearch: any }) => {
   const searchInformation = (e: any) => {
     e.preventDefault();
 
-    let inputValue = (
-      document.getElementById("searchInput") as HTMLTextAreaElement
-    ).value;
-
-    //console.log(inputValue);
-
     if (searchedText.trim() === "") {
       setError(true);
       return;
