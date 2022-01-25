@@ -20,7 +20,7 @@ Enter the following link [https://tovarb.github.io/discogs/](https://tovarb.gith
 
 Search for your favorite artist or album.
 
-Explore the results.
+Explore the results in the different pages.
 
 Select the album or artist that interests you, click it and check the information.
 
