@@ -23,3 +23,25 @@ Search for your favorite artist or album.
 Explore the results.
 
 Select the album or artist that interests you, click it and check the information.
+
+### Steps to run the app locally
+
+Type git clone, and then paste the URL:
+
+```
+$ git clone https://github.com/tovarb/discogs.git
+```
+
+Run command:
+
+```
+npm install
+```
+
+Run command:
+
+```
+npm start
+```
+
+All done! now you can visualize the proyect.
