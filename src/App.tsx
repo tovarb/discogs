@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Form from "./components/Form";
 import ResultList from "./components/ResultList";
-import banner from "./banner.png";
+import Header from "./components/Header";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -63,9 +63,7 @@ function App() {
       </div>
 
       {search === "" ? (
-        <div className="grid justify-items-center bg-black pb-1 jumbotron">
-          <img src={banner} alt="banner" />
-        </div>
+        <Header />
       ) : (
         <div className="justify-items-center">
           <ResultList musicReleases={musicReleases} />
