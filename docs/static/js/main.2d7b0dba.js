@@ -8884,7 +8884,7 @@
       },
       577: function (e, t, n) {
         "use strict";
-        e.exports = n.p + "/static/media/banner.b7fc3d797cbde1cc9a45.png";
+        e.exports = n.p + ".../static/media/banner.b7fc3d797cbde1cc9a45.png";
       },
       221: function (e) {
         "use strict";
