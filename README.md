@@ -12,6 +12,7 @@ A single-page app that displays music releases from Discogs.
 - HTML
 - CSS
 - TailwindCSS
+- Discogs API
 
 ### Usage
 
