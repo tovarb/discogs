@@ -35,13 +35,13 @@ $ git clone https://github.com/tovarb/discogs.git
 Run command:
 
 ```
-npm install
+$ npm install
 ```
 
 Run command:
 
 ```
-npm start
+$ npm start
 ```
 
 All done! now you can visualize the proyect.
